@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【𝐂𝐃𝐒𝟐𝟓】𝐍𝐞𝐭𝐰𝐨𝐫𝐤 𝐒𝐢𝐦𝐮𝐥𝐚𝐭𝐢𝐨𝐧 - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <a href="index.html" class="titre-accueil">
+            <h1>【𝐂𝐃𝐒𝟐𝟓】𝐍𝐞𝐭𝐰𝐨𝐫𝐤 𝐒𝐢𝐦𝐮𝐥𝐚𝐭𝐢𝐨𝐧</h1>
+        </a>
+        <p>Conception d'un réseau informatique complet pour une entreprise multi-sites dans le cadre de la SAé21.</p>
+
+        <button id="menu-toggle" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Navigation -->
+        <nav id="main-nav">
+            <ul>
+                <li><a href="404.html">Notre Entreprise</a></li>
+                <li><a href="404.html">Besoins Réseau</a></li>
+                <li><a href="404.html">Architecture Réseau</a></li>
+                <li><a href="404.html">Services Déployés</a></li>
+                <li><a href="404.html">Politique de Sécurité</a></li>
+                <li><a href="404.html">Contact IT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu Principal -->
+    <main>
+        <section id="accueil">
+            <div class="accueil-conteneur">
+                <h2>Bienvenue sur le projet SAé21 Network Simulation</h2>
+                <a href="https://www.iut-blagnac.fr/fr/" target="_blank" class="discord-btn">Plateforme BUT R&T</a>
+            </div>
+            <p>Ce site a été réalisé dans le cadre de la SAé21, une situation d'apprentissage et d'évaluation du BUT Réseaux & Télécommunications. L'objectif de ce projet est de concevoir, simuler et mettre en place un réseau informatique complet pour une entreprise fictive multi-sites, CDS25.</p>
+            <p>Le professionnel R&T peut être amené à déployer ce type de réseau pour répondre aux besoins en commutation, routage, services réseaux essentiels (DHCP, DNS, SSH, HTTP...) et sécurité. Le projet met en pratique des compétences techniques fondamentales pour fournir une infrastructure cohérente et fiable.</p>
+            <p>Ce site Web, accessible via le réseau simulé, constitue également une preuve de concept : il montre qu'un service web interne peut être mis en place et consulté depuis n'importe quel poste du réseau, comme le ferait un intranet d'entreprise.</p>
+        </section>
+
+        <section id="derniers-ajouts">
+            <h2>Mises à jour récentes</h2>
+            <ul>
+                <li><strong>Topologie complète</strong> : Ajout des schémas Packet Tracer et plan d'adressage finalisé.</li>
+                <li><strong>Services réseau</strong> : DHCP, DNS, SSH, HTTP opérationnels.</li>
+                <li><strong>Scripts</strong> : Scripts de redémarrage des équipements documentés et commentés.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 Projet SAé21 - CDS25. Tous droits réservés.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
